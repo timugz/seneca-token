@@ -53,7 +53,7 @@ module.exports = function (lab) {
       })
     })
 
-    it('respond { ok: true, data: any, expiration: { type$: string }, cache: boolean } if token is valid and extension successfully', function (done) {
+    it('respond { ok: true, data: any, expiration: { type$: string }, cache: boolean } if token is valid and have been extended successfully', function (done) {
       si.act({role: 'token', cmd: 'generate', data: true, duration: 10}, function (err, respond) {
         expect(err).to.not.exist()
         si.act({role: 'token', cmd: 'extend', token: respond.token}, function (err, respond) {
@@ -101,7 +101,7 @@ module.exports = function (lab) {
       })
     })
 
-    describe('cache: { type$: boolean, default$: false}', function () {
+    describe('cache: { type$: boolean, default$: false }', function () {
       it('can update data in cache only', function (done) {
         si.act({role: 'token', cmd: 'generate', data: true, cache: true, duration: 10}, function (err, respond) {
           expect(err).to.not.exist()

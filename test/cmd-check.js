@@ -64,7 +64,7 @@ module.exports = function (lab) {
       })
     })
 
-    describe('cache: {type$: bolean, default$: false}', function () {
+    describe('cache: {type$: boolean, default$: false}', function () {
       it('can check data in cache only', function (done) {
         si.act('role:token, cmd:generate, data: true, cache: true', function (err, respond) {
           expect(err).to.not.exist()
