@@ -263,7 +263,7 @@ with cache argument, it will be stored in cache, not in entity.
 
 * [seneca-cache](https://github.com/senecajs/seneca-cache)
 * [seneca-memcached](https://github.com/rjrodger/seneca-memcached)
-* [seneca-redis-cache](https://github.com/senecajs/seneca-redis-cache))
+* [seneca-redis-cache](https://github.com/senecajs/seneca-redis-cache)
 
 ## note
 
