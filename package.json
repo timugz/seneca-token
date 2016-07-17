@@ -1,7 +1,7 @@
 {
   "name": "seneca-token",
   "description": "Generic token generator, support caching, expiration for seneca",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "token.js",
   "license": "MIT",
   "author": "Tony Phan (timugz)",
