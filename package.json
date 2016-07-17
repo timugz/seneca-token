@@ -1,0 +1,36 @@
+{
+  "name": "seneca-token",
+  "description": "Generic token generator, support caching, expiration for seneca",
+  "version": "0.1.0",
+  "main": "token.js",
+  "license": "MIT",
+  "author": "Tony Phan (timugz)",
+  "contributors": [
+    "Tony Phan"
+  ],
+  "scripts": {
+    "test": "lab test/token.test.js -t 90 -v -L"
+  },
+  "keywords": [
+    "seneca",
+    "plugin",
+    "token"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/timugz/seneca-token.git"
+  },
+  "dependencies": {
+    "lodash": "^4.13.1",
+    "moment": "^2.14.1",
+    "rand-token": "^0.2.1"
+  },
+  "devDependencies": {
+    "code": "3.x.x",
+    "eslint-config-seneca": "2.x.x",
+    "eslint-plugin-standard": "1.x.x",
+    "lab": "10.x.x",
+    "seneca": "2.x.x",
+    "seneca-cache": "^0.1.4"
+  }
+}
