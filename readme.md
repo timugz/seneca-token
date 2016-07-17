@@ -218,7 +218,7 @@ si.act({role: 'token', cmd: 'generate', data: true, duration: 10}, function (err
 Set strict expiration to existing token
 
 ```js
-var Moment = require('moment'_
+var Moment = require('moment')
 si.act({role: 'token', cmd: 'generate', data: true, duration: 10}, function (err, respond) {
   var expiration = Moment().add(200, 's').toISOString()
   si.act({role: 'token', cmd: 'extend', token: respond.token, expired_at: expiration}, function (err, respond) {
@@ -263,7 +263,7 @@ with cache argument, it will be stored in cache, not in entity.
 
 * [seneca-cache](https://github.com/senecajs/seneca-cache)
 * [seneca-memcached](https://github.com/rjrodger/seneca-memcached)
-* [seneca-redis-cache](https://github.com/senecajs/seneca-redis-cache))
+* [seneca-redis-cache](https://github.com/senecajs/seneca-redis-cache)
 
 ## note
 
